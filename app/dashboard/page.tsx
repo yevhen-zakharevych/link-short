@@ -15,7 +15,7 @@ export default function Dashboard() {
   }, [userId, isLoaded, router]);
 
   if (!isLoaded) {
-    return <div>Loading...</div>;
+    return <div role="status" aria-live="polite">Loading...</div>;
   }
 
   return (
