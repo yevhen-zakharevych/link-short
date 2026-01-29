@@ -1,11 +1,21 @@
-import { auth } from "@clerk/nextjs/server";
-import { redirect } from "next/navigation";
+"use client";
 
-export default async function Dashboard() {
-  const { userId } = await auth();
+import { useAuth } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
-  if (!userId) {
-    redirect("/");
+export default function Dashboard() {
+  const { userId, isLoaded } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isLoaded && !userId) {
+      router.push("/");
+    }
+  }, [userId, isLoaded, router]);
+
+  if (!isLoaded) {
+    return <div role="status" aria-live="polite">Loading...</div>;
   }
 
   return (
