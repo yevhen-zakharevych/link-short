@@ -43,10 +43,10 @@ export default function RootLayout({
               <nav className="flex gap-2">
                 <SignedOut>
                   <div className="flex gap-2">
-                    <SignInButton>
+                    <SignInButton mode="modal">
                       <Button variant="outline">Sign In</Button>
                     </SignInButton>
-                    <SignUpButton>
+                    <SignUpButton mode="modal">
                       <Button>Sign Up</Button>
                     </SignUpButton>
                   </div>
