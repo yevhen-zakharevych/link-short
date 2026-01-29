@@ -38,9 +38,6 @@ export default async function Home() {
                 Get Started Free
               </Button>
             </SignUpButton>
-            <Button size="lg" variant="outline" className="text-lg px-8">
-              Learn More
-            </Button>
           </div>
         </section>
 
