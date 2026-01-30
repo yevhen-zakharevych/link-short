@@ -2,7 +2,13 @@ import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { SignUpButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link2, BarChart3, Lock, Zap, Shield, Globe } from "lucide-react";
 
@@ -21,17 +27,18 @@ export default async function Home() {
           <Badge variant="secondary" className="text-sm">
             Fast • Secure • Analytics
           </Badge>
-          
+
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl">
             Shorten Links,
             <span className="text-primary"> Amplify</span> Your Reach
           </h1>
-          
+
           <p className="text-xl text-muted-foreground max-w-2xl">
-            Transform long, complex URLs into short, memorable links. Track engagement, 
-            boost conversions, and take control of your digital presence.
+            Transform long, complex URLs into short, memorable links. Track
+            engagement, boost conversions, and take control of your digital
+            presence.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <SignUpButton mode="modal">
               <Button size="lg" className="text-lg px-8">
@@ -48,7 +55,8 @@ export default async function Home() {
               Everything You Need to Succeed
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Powerful features designed to help you manage and optimize your links effectively
+              Powerful features designed to help you manage and optimize your
+              links effectively
             </p>
           </div>
 
@@ -79,7 +87,8 @@ export default async function Home() {
                 </div>
                 <CardTitle>Advanced Analytics</CardTitle>
                 <CardDescription>
-                  Track clicks, analyze traffic sources, and understand your audience
+                  Track clicks, analyze traffic sources, and understand your
+                  audience
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -136,7 +145,8 @@ export default async function Home() {
                 </div>
                 <CardTitle>Link Management</CardTitle>
                 <CardDescription>
-                  Organize, edit, and control all your shortened links in one place
+                  Organize, edit, and control all your shortened links in one
+                  place
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -155,7 +165,8 @@ export default async function Home() {
                 </div>
                 <CardTitle>Global Reach</CardTitle>
                 <CardDescription>
-                  Share your links anywhere, anytime, with anyone around the world
+                  Share your links anywhere, anytime, with anyone around the
+                  world
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -177,8 +188,8 @@ export default async function Home() {
                 Ready to Get Started?
               </h2>
               <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-                Join thousands of users who trust our platform for their link management needs.
-                Start shortening your links today!
+                Join thousands of users who trust our platform for their link
+                management needs. Start shortening your links today!
               </p>
               <SignUpButton mode="modal">
                 <Button size="lg" className="text-lg px-8">
