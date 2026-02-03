@@ -1,3 +1,7 @@
+---
+description: Read this before implementing authentication or modifying authentication-related code.
+---
+
 # Authentication Guidelines
 
 This document provides specific guidelines for implementing and working with authentication in this project.
